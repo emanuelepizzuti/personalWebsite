@@ -11,7 +11,7 @@ body {
 #header {
   padding: 20px;
 
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 4vw;
   font-weight: 600;
 }
@@ -19,7 +19,7 @@ body {
 #testo {
   padding: 20px;
 
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 4vw;
   font-weight: 300;
   line-height: 6.5vw;
@@ -66,7 +66,7 @@ body {
 #cvport {
   padding: 20px;
 
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 4vw;
   font-weight: 300;
   line-height: 6.5vw;
@@ -75,7 +75,7 @@ body {
 #contacts {
   padding: 20px;
 
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 4vw;
   font-weight: 300;
   line-height: 6.5vw;
