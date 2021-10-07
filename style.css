@@ -1,0 +1,125 @@
+html {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+}
+
+#header {
+  padding: 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+#testo {
+  padding: 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 6.5vw;
+}
+
+#hover {
+}
+
+/* /////////////// */
+/* LINK UNIVERSITÁ */
+/* /////////////// */
+
+#UNIRSMlink {
+  text-decoration: underline;
+}
+
+/* unvisited link */
+#UNIRSMlink:link {
+  color: black;
+}
+
+/* visited link */
+#UNIRSMlink:visited {
+  color: black;
+}
+
+/* mouse over link */
+#UNIRSMlink:hover {
+  background-color: blue;
+  color: white;
+  cursor: none;
+}
+
+/* selected link */
+#UNIRSMlink:active {
+  color: #00ffce;
+  cursor: none;
+}
+
+/* //////////////////// */
+/* FINE LINK UNIVERSITÁ */
+/* //////////////////// */
+
+#cvport {
+  padding: 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 6.5vw;
+}
+
+#contacts {
+  padding: 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 6.5vw;
+}
+
+#contacts span { font-weight: 600; }
+
+a {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #00ffce;
+  cursor: none;
+}
+
+/* selected link */
+a:active {
+  color: #00a384;
+  cursor: none;
+}
+
+#progetti {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #000;
+
+  background-color: black;
+}
+
+/* WORKING FRRRRR GREAT :D */
