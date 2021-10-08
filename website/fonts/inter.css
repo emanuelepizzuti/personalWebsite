@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Inter_Bold';  /*titolo*/
+  src: url(../fonts/Inter-Bold.woff2);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Inter_Regular';  /*testo corrente*/
+  src: url(../fonts/Inter-Regular.woff2);
+  font-weight: 400;
+}
