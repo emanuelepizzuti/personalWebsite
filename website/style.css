@@ -9,17 +9,17 @@ body {
 }
 
 #header {
-  padding: 20px;
+  padding: 10px;
 
   font-family: 'Inter_Bold', monospace;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 #testo {
-  padding: 20px;
+  padding: 10px;
 
   font-family: 'Inter_Regular', monospace;
-  font-size: 4vw;
+  font-size: 5vw;
   line-height: 6.5vw;
 }
 
@@ -62,18 +62,18 @@ body {
 /* //////////////////// */
 
 #cvport {
-  padding: 20px;
+  padding: 10px;
 
   font-family: 'Inter_Regular', monospace;
-  font-size: 4vw;
+  font-size: 5vw;
   line-height: 6.5vw;
 }
 
 #contacts {
-  padding: 20px;
+  padding: 10px;
 
   font-family: 'Inter_Regular', monospace;
-  font-size: 4vw;
+  font-size: 5vw;
   line-height: 6.5vw;
 }
 
@@ -108,11 +108,11 @@ a:active {
 
 #progetti {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
 
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  bottom: 10px;
   border: 1px solid #000;
 
   background-color: black;
