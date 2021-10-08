@@ -113,9 +113,31 @@ a:active {
 
   right: 10px;
   bottom: 10px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 
   background-color: black;
 }
+
+/* ///////////////////////////////////////////////// */
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */
+
+/* ///////////////////////////////////////////////// */
 
 /* WORKING FRRRRR GREAT :D */
