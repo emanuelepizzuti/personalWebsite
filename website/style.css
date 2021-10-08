@@ -11,17 +11,15 @@ body {
 #header {
   padding: 20px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter_Bold', sans-serif;
   font-size: 4vw;
-  font-weight: 600;
 }
 
 #testo {
   padding: 20px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter_Regular', sans-serif;
   font-size: 4vw;
-  font-weight: 300;
   line-height: 6.5vw;
 }
 
@@ -66,25 +64,23 @@ body {
 #cvport {
   padding: 20px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter_Regular', sans-serif;
   font-size: 4vw;
-  font-weight: 300;
   line-height: 6.5vw;
 }
 
 #contacts {
   padding: 20px;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter_Regular', sans-serif;
   font-size: 4vw;
-  font-weight: 300;
   line-height: 6.5vw;
 }
 
-#contacts span { font-weight: 600; }
+#contacts span { font-family: 'Inter_Bold'; }
 
 a {
-  font-weight: 300;
+  font-family: 'Inter_Regular';
   text-decoration: underline;
 }
 
