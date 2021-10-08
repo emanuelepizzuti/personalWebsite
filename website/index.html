@@ -35,20 +35,61 @@
 	</div>
 
 	<div id="cvport">
-		<a href="link">curriculum vitae</a>
+		<a href="https://drive.google.com/uc?export=download&id=1N0LGfifnQulYx2BQjK1gU0gX8Y9eZRGC">curriculum vitae</a>
 		</br>portfolio on request
 	</div>
 
 	<div id="contacts">
 		<span>CONTACTS</span></br>
-		<a href="link">mail me!</a></br>
-		<a href="link">Linkedin</a></br>
-		<a href="link">Instagram</a>
+		<a href="mailto:emanuele.pizzuti96@gmail.com">mail me!</a></br>
+		<a href="https://www.linkedin.com/in/emanuelepizzuti/">Linkedin</a></br>
+		<a href="https://www.instagram.com/emanuelepizzuti/">Instagram</a>
 	</div>
 
 		<div id="progetti">
+			<div class="mySlides fade">
+				<img src="img/01.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+	  		<img src="img/02.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+	  		<img src="img/03.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+	  		<img src="img/04.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+	  		<img src="img/05.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+	  		<img src="img/06.png" style="width:100%">
+			</div>
 
 		</div>
+
+		<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+</script>
 
 </body>
 
