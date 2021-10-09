@@ -1,0 +1,144 @@
+html {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+}
+
+#header {
+  padding: 10px;
+  font-family: 'Inter_Bold', sans-serif;
+  font-size: 5vw;
+}
+
+#testo {
+  padding: 10px;
+  font-family: 'Inter_Regular', sans-serif;
+  font-size: 5vw;
+  line-height: 6.5vw;
+}
+
+#hover {} /* HOVER MOUSE SU TESTO */
+
+#hover:hover {
+  color: white;
+  cursor: none;
+}
+
+.pointer {
+  position: absolute;
+  pointer-events: none;
+}
+
+.pointer img {
+  position: relative;
+  height: 100px; width: 200px;
+  top: -50px; left: -50%;
+} /* FINE HOVER MOUSE SU TESTO */
+
+#UNIRSMlink { /* LINK UNIVERSITÁ */
+  text-decoration: underline;
+}
+
+/* unvisited link */
+#UNIRSMlink:link {
+  color: black;
+}
+
+/* visited link */
+#UNIRSMlink:visited {
+  color: black;
+}
+
+/* mouse over link */
+#UNIRSMlink:hover {
+  background-color: blue;
+  color: white;
+  cursor: none;
+}
+
+/* selected link */
+#UNIRSMlink:active {
+  color: #00ffce;
+  cursor: none;
+} /* FINE LINK UNIVERSITÁ */
+
+#cvport {
+  padding: 10px;
+  font-family: 'Inter_Regular', sans-serif;
+  font-size: 5vw;
+  line-height: 6.5vw;
+}
+
+#contacts {
+  padding: 10px;
+  font-family: 'Inter_Regular', sans-serif;
+  font-size: 5vw;
+  line-height: 6.5vw;
+}
+
+#contacts span { font-family: 'Inter_Bold', sans-serif;; }
+
+a {
+  font-family: 'Inter_Regular', sans-serif;
+  text-decoration: underline;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #00ffce;
+  cursor: none;
+}
+
+/* selected link */
+a:active {
+  color: #00a384;
+  cursor: none;
+}
+
+#progetti {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  right: 10px;
+  bottom: 10px;
+  /* border: 1px solid #000; */
+
+  background-color: black;
+}
+
+/* ///////////////////////////////////////////////// */
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */
+
+/* ///////////////////////////////////////////////// */
