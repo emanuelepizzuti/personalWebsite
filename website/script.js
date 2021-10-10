@@ -11,7 +11,7 @@ function showSlides() { // Slideshow immagini
   if (slideIndex > slides.length) {slideIndex = 1}
 
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1500); // Change image every 2 seconds
+  setTimeout(showSlides, 500); // Change image every 2 seconds
 }
 
 function ShowImage(src) { // Mostra immagini con over su testo
