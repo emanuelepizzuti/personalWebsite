@@ -9,12 +9,14 @@ body {
 }
 
 #header {
+  color: #002921;
   padding: 10px;
   font-family: 'Inter_Bold', sans-serif;
   font-size: 5vw;
 }
 
 #testo {
+  color: #003329;
   padding: 10px;
   font-family: 'Inter_Regular', sans-serif;
   font-size: 5vw;
@@ -45,12 +47,12 @@ body {
 
 /* unvisited link */
 #UNIRSMlink:link {
-  color: black;
+  color: #003329;
 }
 
 /* visited link */
 #UNIRSMlink:visited {
-  color: black;
+  color: #003329;
 }
 
 /* mouse over link */
@@ -67,6 +69,8 @@ body {
 } /* FINE LINK UNIVERSITÁ */
 
 #cvport {
+  color: #003329;
+
   padding: 10px;
   font-family: 'Inter_Regular', sans-serif;
   font-size: 5vw;
@@ -74,13 +78,18 @@ body {
 }
 
 #contacts {
+  color: #003329;
+
   padding: 10px;
   font-family: 'Inter_Regular', sans-serif;
   font-size: 5vw;
   line-height: 6.5vw;
 }
 
-#contacts span { font-family: 'Inter_Bold', sans-serif;; }
+#contacts span {
+  color: #003329;
+  font-family: 'Inter_Bold', sans-serif;
+}
 
 a {
   font-family: 'Inter_Regular', sans-serif;
@@ -89,12 +98,12 @@ a {
 
 /* unvisited link */
 a:link {
-  color: black;
+  color: #003329;
 }
 
 /* visited link */
 a:visited {
-  color: black;
+  color: #003329;
 }
 
 /* mouse over link */
@@ -142,3 +151,90 @@ a:active {
 } */
 
 /* ///////////////////////////////////////////////// */
+
+@media screen and (min-width:376px) and (max-width:768px) {
+
+  #header {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  #testo {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  .pointer img {
+    height: 120px; width: 240px;
+    top: -60px; left: -50%;
+  }
+
+  #cvport {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  #contacts {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  #progetti {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+
+    right: 10px;
+    bottom: 10px;
+    /* border: 1px solid #000; */
+
+    background-color: black;
+  }
+
+}
+
+/* @media screen and (min-width: 481px) and (max-width: 800px) { */
+@media screen and (min-width: 769px) {
+
+  #header {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  #testo {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    width: 45%;
+  }
+
+  .pointer img {
+    height: 120px; width: 240px;
+    top: -60px; left: -50%;
+  }
+
+  #cvport {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  #contacts {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 0px;
+  }
+
+  #progetti {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+
+    right: 10px;
+    bottom: 10px;
+    /* border: 1px solid #000; */
+
+    background-color: black;
+  }
+
+}
