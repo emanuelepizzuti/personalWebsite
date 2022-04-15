@@ -16,7 +16,7 @@ $(".switch").click(function() {
 });
 
 $(".spiderman").click(function() {
-  $(".name").html("⚠ wallpaper zone");
+  $(".name").html("⚠&#xFE0E; wallpaper zone");
   $("#snow").removeClass("noDisplay");
   $("footer").addClass("noDisplay");
   $(".exit-wp").removeClass("noDisplay");
