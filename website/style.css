@@ -19,6 +19,16 @@ header {
   font-weight: 700;
   font-size: 24px;
   color: #1f1f1f;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exit-wp {
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 .text {
@@ -28,6 +38,28 @@ header {
   font-size: 24px;
   line-height: 38px;
   color: #1f1f1f;
+}
+
+.text2 {
+  padding: 0 20px 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #1f1f1f;
+}
+
+.pizza, .spiderman {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #F4F6F0;
+  background-color: #1f1f1f;
+  border: none;
+  outline: 1px solid #F4F6F0;
+  outline-offset: 2px;
 }
 
 .linkUni {
@@ -69,6 +101,7 @@ footer {
   width: 100vw;
 }
 
+/* SLIDER */
 #bottomText {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -153,4 +186,17 @@ footer {
   100% {
     -webkit-transform: translateX(-200%);
   }
+}
+
+.text-darkmode {
+  color: #F4F6F0 !important;
+}
+
+.body-darkmode {
+  background-color: #1f1f1f !important;
+  border-color: #f4f6f0 !important;
+}
+
+.noDisplay {
+  display: none;
 }

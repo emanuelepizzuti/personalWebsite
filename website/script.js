@@ -1,29 +1,30 @@
-var slideIndex = 0;
-showSlides();
+$(".switch").click(function() {
+  $("body, html, .switch, #bottomText").toggleClass("body-darkmode");
+  $("header, .text, .text2, .linkUni, .contacts, .switch, #bottomText").toggleClass("text-darkmode");
 
-function showSlides() { // Slideshow immagini
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if ($(".switch").hasClass("body-darkmode")) {
+    $(".switch").html("<-- back to easy mode");
+    $(".text2").removeClass("noDisplay");
+    $(".text").addClass("noDisplay");
+    $(".contacts").addClass("noDisplay");
+  } else {
+    $(".switch").html("click here to switch to pro mode -->");
+    $(".text").removeClass("noDisplay");
+    $(".text2").addClass("noDisplay");
+    $(".contacts").removeClass("noDisplay");
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 500); // Change image every 2 seconds
-}
-
-function ShowImage(src) { // Mostra immagini con over su testo
-  var img = document.getElementById('popupImage');
-  img.src = src;
-  img.style.display = "block";
-}
-
-$(document).mousemove(function (e) {
-  $(".pointer").css({ left: e.pageX, top: e.pageY });
 });
 
-function HideImage() {
-  document.getElementById('popupImage').style.display = "none";
-}
+$(".spiderman").click(function() {
+  $(".name").html("⚠ wallpaper zone");
+  $("#snow").removeClass("noDisplay");
+  $("footer").addClass("noDisplay");
+  $(".exit-wp").removeClass("noDisplay");
+})
+
+$(".exit-wp").click(function() {
+  $(".name").html("emanuelepizzuti");
+  $("#snow").addClass("noDisplay");
+  $("footer").removeClass("noDisplay");
+  $(".exit-wp").addClass("noDisplay");
+})
