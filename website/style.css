@@ -11,7 +11,6 @@ body, html {
   flex-direction: column;
   padding:
     env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
-  height: 100vh;
 }
 
 header {
@@ -46,15 +45,14 @@ header {
 }
 
 .pizza, .spiderman {
+  background-color: transparent;
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #F4F6F0;
-  background-color: #1f1f1f;
+  color: #1f1f1f;
   border: none;
-  outline: 1px solid #F4F6F0;
   outline-offset: 2px;
 }
 
@@ -189,10 +187,24 @@ footer {
   color: #F4F6F0 !important;
 }
 
-/* .body-colormode {
-  background-color: #1f1f1f !important;
-  border-color: #f4f6f0 !important;
-} */
+.body-colormode {
+  background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+	background-size: 500% 500%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 .noDisplay {
   display: none;
