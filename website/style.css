@@ -11,6 +11,7 @@ body, html {
   flex-direction: column;
   padding:
     env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+  height: 100vh;
 }
 
 header {
@@ -24,11 +25,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.exit-wp {
-  text-decoration: underline;
-  font-weight: 400;
 }
 
 .text {
@@ -90,7 +86,8 @@ footer {
 }
 
 .switch {
-  background-color: #F4F6F0;
+  /* background-color: #F4F6F0; */
+   background-color: transparent;
   color: #1f1f1f;
   border: none;
   font-family: 'Inter', sans-serif;
@@ -108,10 +105,10 @@ footer {
   font-size: 16px;
   color: #1f1f1f;
   left: 0px;
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   width: 100%;
   height: 40px;
-  background-color: #F4F6F0;
+  /* background-color: #F4F6F0; */
   border-top: 1px solid #1f1f1f;
   border-bottom: 1px solid #1f1f1f;
   overflow: hidden;
@@ -188,14 +185,14 @@ footer {
   }
 }
 
-.text-darkmode {
+.text-colormode {
   color: #F4F6F0 !important;
 }
 
-.body-darkmode {
+/* .body-colormode {
   background-color: #1f1f1f !important;
   border-color: #f4f6f0 !important;
-}
+} */
 
 .noDisplay {
   display: none;
