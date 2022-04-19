@@ -21,7 +21,7 @@ header {
   font-family: Inter;
   letter-spacing: -0.1px;
   color: #1f1f1f;
-  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -80,25 +80,28 @@ header {
   line-height: 34px;
   color: #1f1f1f;
   text-decoration: none;
+}
+
+ul {
   list-style-type: none;
 }
 
-li:link {
+a:link {
   color: #1f1f1f;
   text-decoration: none;
 }
 
-li:visited {
+a:visited {
   color: #1f1f1f;
   text-decoration: none;
 }
 
-li:hover {
+a:hover {
   color: #1f1f1f;
   text-decoration: underline;
 }
 
-li:active {
+a:active {
   color: #1f1f1f;
   text-decoration: underline;
 }
