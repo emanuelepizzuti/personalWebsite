@@ -1,10 +1,11 @@
 var control = true;
 
-$(".switch").click(function() {
+$(".switch-button").click(function() {
   $("body, html").toggleClass("body-colormode");
 
   if (control) {
-    $(".switch").html("<-- back to easy mode");
+    // $(".switch").html("<-- back to easy mode");
+    $(".switch-button").css("background: transparent");
     $(".text2").removeClass("noDisplay");
     $(".text").addClass("noDisplay");
 
@@ -38,7 +39,7 @@ $(".switch").click(function() {
   } else if (control == false) {
 
     clearInterval(timer);
-    $(".switch").html("click here to switch to pro mode -->");
+    // $(".switch").html("click here to switch to pro mode -->");
     $(".text").removeClass("noDisplay");
     $(".text2").addClass("noDisplay");
     $(".contacts").removeClass("noDisplay");

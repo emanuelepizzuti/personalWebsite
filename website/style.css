@@ -25,6 +25,8 @@ header {
   align-items: center;
 }
 
+
+
 .text {
   padding: 0 20px 20px;
   font-family: 'Inter', sans-serif;
@@ -91,8 +93,7 @@ footer {
   width: 100vw;
 }
 
-.switch {
-  /* background-color: #F4F6F0; */
+/* .switch {
   background-color: transparent;
   color: #1f1f1f;
   border: none;
@@ -102,6 +103,17 @@ footer {
   text-align: center;
   padding: 20px;
   width: 100vw;
+} */
+
+.switch-button {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid black;
+  border: none;
+   border-radius: 50px;
+   background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+   background-size: 500% 500%;
+   animation: gradient 15s ease infinite;
 }
 
 /* SLIDER */
