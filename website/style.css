@@ -11,6 +11,7 @@ body, html {
   flex-direction: column;
   padding:
     env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+  overflow: hidden;
 }
 
 header {
@@ -118,7 +119,7 @@ footer {
 }
 
 .contacts-container {
-  width: 100%;
+  width: 100vw;
   border-top: 1px solid black;
   padding: 20px;
 }
@@ -132,7 +133,7 @@ footer {
   line-height: 28px;
   color: #1f1f1f;
   text-decoration: none;
-  width: 100%
+  width: 100vw;
 }
 
 .switch-button {
