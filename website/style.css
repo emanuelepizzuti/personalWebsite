@@ -17,31 +17,35 @@ header {
   padding: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 21px;
+  font-family: Inter;
+  letter-spacing: -0.1px;
   color: #1f1f1f;
+  border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-
-
 .text {
-  padding: 0 20px 20px;
+  padding: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 21px;
+  line-height: 34px;
+  letter-spacing: -0.1px;
   color: #1f1f1f;
 }
 
 .text2 {
-  padding: 0 20px 20px;
+  padding: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 21px;
+  line-height: 34px;
+  letter-spacing: -0.1px;
   color: #1f1f1f;
 }
 
@@ -50,15 +54,12 @@ header {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 21px;
+  letter-spacing: -0.1px;
   color: #1f1f1f;
-  border: none;
-  outline-offset: 2px;
-  height:90px;
-  outline: 2px solid black;
 }
 
-.spidermanImg{
+.spidermanImg {
   background-image: url("img/spidey.svg");
   background-size: contain;
   /* background-repeat: no-repeat; */
@@ -71,15 +72,35 @@ header {
   color: #1f1f1f;
 }
 
-.contacts {
-  display: inline-block;
-  padding: 0px 20px 0px;
+.download {
+  padding: 0px 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 21px;
+  line-height: 34px;
   color: #1f1f1f;
   text-decoration: none;
+  list-style-type: none;
+}
+
+li:link {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+li:visited {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+li:hover {
+  color: #1f1f1f;
+  text-decoration: underline;
+}
+
+li:active {
+  color: #1f1f1f;
+  text-decoration: underline;
 }
 
 footer {
@@ -93,40 +114,46 @@ footer {
   width: 100vw;
 }
 
-/* .switch {
-  background-color: transparent;
-  color: #1f1f1f;
-  border: none;
+.contacts-container {
+  width: 100%;
+  border-top: 1px solid black;
+  padding: 20px;
+}
+
+.contacts {
+  padding: 0 20px;
+  display: inline-block;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  text-align: center;
-  padding: 20px;
-  width: 100vw;
-} */
+  line-height: 28px;
+  color: #1f1f1f;
+  text-decoration: none;
+  width: 100%
+}
 
 .switch-button {
   width: 25px;
   height: 25px;
-  outline: 1px solid black;
-  border: none;
-   border-radius: 50px;
-   background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
-   background-size: 500% 500%;
-   animation: gradient 15s ease infinite;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+  background-size: 300% 300%;
+  animation: gradient 5s ease infinite;
 }
 
-/* SLIDER */
+.switch-button-white {
+  background: #F4F6F0 !important;
+}
+
 #bottomText {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #1f1f1f;
   left: 0px;
-  /* background: #FFFFFF; */
   width: 100%;
   height: 40px;
-  /* background-color: #F4F6F0; */
   border-top: 1px solid #1f1f1f;
   border-bottom: 1px solid #1f1f1f;
   overflow: hidden;
@@ -203,15 +230,10 @@ footer {
   }
 }
 
-.text-colormode {
-  color: #F4F6F0 !important;
-}
-
 .body-colormode {
   background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
-  background-size: 500% 500%;
-  animation: gradient 15s ease infinite;
-  /* height: 100vh; */
+  background-size: 450% 450%;
+  animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
