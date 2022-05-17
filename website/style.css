@@ -257,3 +257,131 @@ footer {
 .noDisplay {
   display: none;
 }
+
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+
+html {
+}
+
+  header {
+    padding: 30px 20px;
+  }
+
+  .centre{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+
+  }
+
+  .text {
+    font-size: 48px;
+    line-height: 70px;
+    max-width: 100%;
+  }
+
+  .download {
+    padding-top:40px;
+    font-size: 21px;
+    line-height: 36px;
+    bottom: 0;
+  }
+
+  .contacts {
+    font-size: 21px;
+    line-height: 36px;
+  }
+
+  #bottomText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #1f1f1f;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  /*remove p*/
+  .btmText {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+
+  .btmText1 {
+    padding-left: 800px;
+    display: inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left1 16s linear infinite;
+    animation: scrolling-left1 16s lin8ar infinite;8  }
+
+  .btmText2 {
+    padding-left: 800px;
+    display: inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left2 16s linear infinite;
+    animation: scrolling-left2 16s lin8ar infinite;
+    animation-delay: 8s;
+  }
+
+  /* scrolling-left is continuous/repeatly text */
+  @keyframes scrolling-left1 {
+    0% {
+      transform: translateX(100vw);
+      -webkit-transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scrolling-left2 {
+    0% {
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+    }
+  }
+
+  @-webkit-keyframes scrolling-left1 {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes scrolling-left2 {
+    0% {
+      -webkit-transform: translateX(0%);
+    }
+
+    100% {
+      -webkit-transform: translateX(-200%);
+    }
+  }
+
+  .body-colormode {
+    background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+  }
+}
+
+/* FINE DESKTOP */
