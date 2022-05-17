@@ -235,9 +235,9 @@ footer {
 }
 
 .body-colormode {
-  background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+  background: linear-gradient(-30deg, #F4F6F0, #F4F6F0, #D5F496, #ADFFE6, #BA96F4, #F4F6F0, #F4F6F0);
   background-size: 450% 450%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
