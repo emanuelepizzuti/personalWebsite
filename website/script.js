@@ -1,6 +1,7 @@
 var control = true;
 
 $(document).ready(function() {
+  $(".text").lettering('words');
   setInterval(changeImg, 2000);
 
   function changeImg() {

@@ -51,6 +51,11 @@ header {
   line-height: var(--textheight);
   letter-spacing: var(--textspacing);
   color: #1f1f1f;
+  transition: color 1s linear; /* vendorless fallback */
+  -o-transition: color 1s linear; /* opera */
+  -ms-transition: color 1s linear; /* IE 10 */
+  -moz-transition: color 1s linear; /* Firefox */
+  -webkit-transition: color 1s linear; /*safari and chrome */
 }
 
 .text2 {
@@ -303,6 +308,24 @@ footer {
     grid-column-end: 3;
     font-size: var(--textsize-desktop);
   }
+.text span {
+      color: #1f1f1f;
+      transition: color 3s linear; /* vendorless fallback */
+      -o-transition: color 3s linear; /* opera */
+      -ms-transition: color 3s linear; /* IE 20 */
+      -moz-transition: color 3s linear; /* Firefox */
+      -webkit-transition: color 3s linear; /*safari and chrome */
+}
+
+  .text span:hover {
+    /* font-weight: 700; */
+    color: #0086ff;
+    /* color: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD); */
+    /* animation: gradient 15s ease infinite; */
+    transition: color 0s;
+    /* transition-delay: 1s; */
+    /* letter-spacing: -0.2vw; */
+}
 
   .download {
     padding: 0;
