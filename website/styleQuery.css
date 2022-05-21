@@ -1,0 +1,120 @@
+:root {
+  --textsize: 21px;
+  --textsize-desktop: 46px;
+  --textsize-tablet: 36px;
+  --textheight: 150%;
+  --textspacing: -0.2px;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  header {
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  .name {
+    padding-left: 20px;
+  }
+
+  .switch-button {
+    margin-right: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    width: 66vw;
+  }
+
+  .text {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: var(--textsize-desktop);
+  }
+
+  .text span {
+    color: #1f1f1f;
+    transition: color 3s linear;
+    /* vendorless fallback */
+    -o-transition: color 3s linear;
+    /* opera */
+    -ms-transition: color 3s linear;
+    /* IE 20 */
+    -moz-transition: color 3s linear;
+    /* Firefox */
+    -webkit-transition: color 3s linear;
+    /*safari and chrome */
+  }
+
+  .text span:hover {
+    color: #0086ff;
+    transition: color 0s;
+  }
+
+  .text2 {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: var(--textsize-desktop);
+  }
+
+  #pizza, #spiderman {
+    font-size: var(--textsize-desktop);
+  }
+
+  .download {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: var(--textsize);
+    line-height: var(--textheight);
+  }
+
+  .contacts {
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: var(--textsize);
+    line-height: var(--textheight);
+  }
+
+  #bottomText {
+    font-size: 21px;
+    height: 40px;
+  }
+
+  /*remove p*/
+  .btmText {
+    width: 100%;
+  }
+
+  .btmText1 {
+    padding-left: 800px;
+    -webkit-animation: scrolling-left1 8s linear infinite;
+    animation: scrolling-left1 8s linear infinite;
+  }
+
+  .btmText2 {
+    padding-left: 800px;
+    -webkit-animation: scrolling-left2 8s linear infinite;
+    animation: scrolling-left2 8s lin8ar infinite;
+    animation-delay: 4s;
+  }
+
+  .body-colormode {
+    background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+  }
+}

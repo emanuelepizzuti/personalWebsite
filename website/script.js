@@ -7,7 +7,7 @@ $(document).ready(function() {
   function changeImg() {
     var x = document.getElementById("spiderman");
     if (x.innerHTML === "spiderman") {
-      x.innerHTML = "🕷 🕷 🕷 🕷";
+      x.innerHTML = "🕷 🙋‍♂️ 🕷 ‍🙋‍♂️";
     } else {
       x.innerHTML = "spiderman";
     }
