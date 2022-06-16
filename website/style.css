@@ -22,18 +22,21 @@ body, html {
 
 header {
   /* background: azure; */
-  padding: 20px;
+  padding: 15px;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: var(--textsize);
   font-family: Inter;
   letter-spacing: var(--textspacing);
   color: #1f1f1f;
-  border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  background-color: aqua;
+}
+
+.list-mobile {
+  display: none;
 }
 
 .container {
@@ -51,11 +54,16 @@ header {
   line-height: var(--textheight);
   letter-spacing: var(--textspacing);
   color: #1f1f1f;
-  transition: color 1s linear; /* vendorless fallback */
-  -o-transition: color 1s linear; /* opera */
-  -ms-transition: color 1s linear; /* IE 10 */
-  -moz-transition: color 1s linear; /* Firefox */
-  -webkit-transition: color 1s linear; /*safari and chrome */
+  transition: color 1s linear;
+  /* vendorless fallback */
+  -o-transition: color 1s linear;
+  /* opera */
+  -ms-transition: color 1s linear;
+  /* IE 10 */
+  -moz-transition: color 1s linear;
+  /* Firefox */
+  -webkit-transition: color 1s linear;
+  /*safari and chrome */
 }
 
 .text2 {

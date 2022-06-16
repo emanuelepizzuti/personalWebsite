@@ -15,19 +15,30 @@
   }
 
   header {
-    padding: 20px 20px;
+    padding: 15px 15px;
     position: fixed;
     top: 0;
     width: 100vw;
   }
 
   .name {
-    padding-left: 20px;
+    padding-left: 15px;
   }
 
-  .switch-button {
-    margin-right: 20px;
+  .list {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
+
+  li a {
+    text-decoration: none;
+  }
+
+  /* .switch-button {
+    margin-right: 20px;
+  } */
 
   .container {
     display: grid;
