@@ -1,103 +1,86 @@
 :root {
-  --textsize: 21px;
-  --textsize-desktop: 46px;
+  --textsize: 24px;
+  --textsize-desktop: 42px;
   --textsize-tablet: 36px;
   --textheight: 150%;
   --textspacing: -0.2px;
+  --black: #1a1a1a;
+  --white: #faffff;
 }
 
-@media only screen and (min-width: 992px) {
-  body {
+/* *************** */
+/* *** DESKTOP *** */
+/* *************** */
+@media(min-width: 1000px) {
+  header {
+    border-bottom: none;
+  }
+
+  .navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu {
+    position: relative;
+    opacity: 1;
+    right: 0;
+    flex-direction: row;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    gap: 50px;
+    background: transparent !important;
+    top: 0px;
   }
 
-  header {
-    padding: 15px 15px;
-    position: fixed;
-    top: 0;
-    width: 100vw;
+  .nav-item {
+    text-align: right;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 18px;
   }
 
-  .name {
-    padding-left: 15px;
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
-
-  .list {
-    padding-right: 15px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  li a {
-    text-decoration: none;
-  }
-
-  /* .switch-button {
-    margin-right: 20px;
-  } */
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 60px;
-    width: 66vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .text {
     padding: 0;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    width: 80vw;
     font-size: var(--textsize-desktop);
-  }
-
-  .text span {
-    color: #1f1f1f;
-    transition: color 3s linear;
-    /* vendorless fallback */
-    -o-transition: color 3s linear;
-    /* opera */
-    -ms-transition: color 3s linear;
-    /* IE 20 */
-    -moz-transition: color 3s linear;
-    /* Firefox */
-    -webkit-transition: color 3s linear;
-    /*safari and chrome */
-  }
-
-  .text span:hover {
-    color: #0086ff;
-    transition: color 0s;
+    font-weight: 200;
   }
 
   .text2 {
+    width: 80vw;
+   font-weight: 200;
     padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
-    font-size: var(--textsize-desktop);
-  }
-
-  #pizza, #spiderman {
     font-size: var(--textsize-desktop);
   }
 
   .download {
     padding: 0;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    font-size: var(--textsize);
+    width: 80vw;
+    text-align: left;
+    font-size: var(--textsize-desktop);
     line-height: var(--textheight);
-  }
-
-  .contacts {
-    padding: 0;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-size: var(--textsize);
-    line-height: var(--textheight);
+    font-weight: 200;
   }
 
   #bottomText {
@@ -105,7 +88,6 @@
     height: 40px;
   }
 
-  /*remove p*/
   .btmText {
     width: 100%;
   }

@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-	<meta charset="utf-8">
-	<title>emanuelepizzuti</title>
-	<link rel="icon" type="image/x-icon" href="img/favicon.svg">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="styleQuery.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+  <meta charset="utf-8">
+  <title>emanuelepizzuti</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="newStyle.css">
+  <link rel="stylesheet" href="wideStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="">
+  <header>
+    <nav class="navbar">
+      <!-- <a href="#" class="nav-branding">EMANUELEPIZZUTI</a> -->
+      <div class="nav-branding switch-button">
+        <p class="">EMANUELEPIZZUTI</p>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link">-> LINKEDIN</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">-> BEHANCE</a></li>
+        <!-- LA MAIL LA FACCIAMO COPIARE NEGLI APPUNTI -->
+        <li class="nav-item"><a href="#" class="nav-link">-> MAIL ME!</a></li>
+      </ul>
+      <div class="hamburger"></div>
+    </nav>
+  </header>
 
-	<header>
-		<p class="name">EMANUELEPIZZUTI</p>
+  <div class="container">
+    <p class="text">Ciao! I’m Emanuele, 25 years old, based in Italy and just graduated from <a class="linkUni" href="https://design.unirsm.sm/">UNIRSM Design</a>. I’m an Interaction Designer in &#10084;&#xFE0E; with data design and motion design.
+    </p>
 
-		<ul class="list-mobile">
-			<li><a href="#home">LINKEDIN</a></li>
-			<li><a href="#news">BEHANCE</a></li>
-			<li><a href="#contact">MAIL ME!</a></li>
-		</ul>
+    <p class="text2 noDisplay">Ciao! I’m Emanuele, 25 years old, based in Italy and just graduated from <a class="linkUni" href="https://design.unirsm.sm/">UNIRSM Design</a>. I’m a human still looking for his super powers. I love <span
+        id="pizza">pizza</span> and my favourite <span id="spiderman">super hero is spiderman</span>.</p>
 
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		</a>
+    <ul class="download">
+      <li class="cv">&rarr; <a href="#">view my Curriculum Vitae</a></li>
+      <li class="portfolio">&rarr; Portfolio upon request</li>
+    </ul>
 
-		<ul class="list">
-			<li><a href="#home">LINKEDIN</a></li>
-			<li><a href="#news">BEHANCE</a></li>
-			<li><a href="#contact">MAIL ME!</a></li>
-		</ul>
-	</header>
+  </div>
 
-	<div class="container">
-		<p class="text">Ciao! I’m Emanuele, 25 years old, based in Italy and just graduated from <a class="linkUni" href="https://design.unirsm.sm/">UNIRSM Design</a>. I’m an Interaction Designer in &#10084;&#xFE0E; with data design and motion design.
-		</p>
-
-		<p class="text2 noDisplay">Ciao! I’m Emanuele, 25 years old, based in Italy and just graduated from <a class="linkUni" href="https://design.unirsm.sm/">UNIRSM Design</a>. I’m a human still looking for his super powers. I like <span
-				id="pizza">pizza</span> and my favourite super hero is <span id="spiderman">spiderman</span>.</p>
-
-		<ul class="download">
-			<li class="cv">&rarr; <a href="#">view my Curriculum Vitae</a></li>
-			<li class="portfolio">&rarr; Portfolio upon request</li>
-		</ul>
-
-	</div>
-
-	<footer>
-		<div id='bottomText'>
-			<p class="btmText">
-				<span class="btmText1">website under construction</span>
-				<span class="btmText2">website under construction</span>
-			</p>
-		</div>
-	</footer>
-
+  <footer>
+    <div id='bottomText'>
+      <p class="btmText">
+        <span class="btmText1">website under construction</span>
+        <span class="btmText2">website under construction</span>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
-
-<script type="text/javascript" src="script.js"></script>
 
 </html>
