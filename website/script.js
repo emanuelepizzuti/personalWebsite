@@ -37,25 +37,25 @@ $(document).ready(function() {
   setInterval(changeText2, 5000);
 
   function changeText2() {
-    var arr = ["super hero is spiderman", "tv show is the office", "anime is Attack on Titan"];
+    var arr = ["super hero is Spider-Man", "character from The Office is Kevin Malone", "anime is Kiseiju"];
     var x = document.getElementById("spiderman");
-    if (x.innerHTML === "super hero is spiderman") {
+    if (x.innerHTML === "super hero is Spider-Man") {
       x.innerHTML = arr[1];
-    } else if (x.innerHTML === "tv show is the office") {
+    } else if (x.innerHTML === "character from The Office is Kevin Malone") {
       x.innerHTML = arr[2];
-    } else if (x.innerHTML === "anime is Attack on Titan") {
+    } else if (x.innerHTML === "anime is Kiseiju") {
       x.innerHTML = arr[0];
     }
   }
 
   function changeText() {
-    var arr2 = ["pizza", "coffee", "LRDL"];
+    var arr2 = ["coffee", "going to music concerts", "the mountain"];
     var x = document.getElementById("pizza");
-    if (x.innerHTML === "pizza") {
+    if (x.innerHTML === "coffee") {
       x.innerHTML = arr2[1];
-    } else if (x.innerHTML === "coffee") {
+    } else if (x.innerHTML === "going to music concerts") {
       x.innerHTML = arr2[2];
-    } else if (x.innerHTML === "LRDL") {
+    } else if (x.innerHTML === "the mountain") {
       x.innerHTML = arr2[0];
     }
   }
