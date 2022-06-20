@@ -177,89 +177,65 @@ footer {
   width: 100vw;
 }
 
-#bottomText {
+.orb {
+  text-align: center;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: var(--textheight);
   letter-spacing: var(--textspacing);
   color: var(--black);
-  left: 0px;
-  width: 100%;
+  width: 250px;
+  /* height: 40px; */
+  /* background: #999; */
+  /* border-radius: 50px; */
+  display: inline-block;
+  margin: 0 74.5px;
+  float: left;
+  transition: all .2s ease-out;
+}
+
+.orb:hover {
+  cursor: pointer;
+}
+
+.marquee {
+  top: 0;
+  padding-top: 5px;
   height: 40px;
-  border-top: 1px solid #1f1f1f;
-  border-bottom: 1px solid #1f1f1f;
+  width: 1600px;
+  border: 1px solid var(--black);
   overflow: hidden;
-  display: flex;
-  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  /* margin: 200px auto; */
 }
 
-/*remove p*/
-.btmText {
-  width: 100%;
-  margin: 0 auto;
-  white-space: nowrap;
+.marquee--inner {
+  display: block;
+  width: 200%;
+  /* margin: 70px 0; */
+  position: absolute;
+  animation: marquee 20s linear infinite;
 }
 
-.btmText1 {
-  padding-left: 150px;
-  display: inline-block;
-  /* Apply animation to this element */
-  -webkit-animation: scrolling-left1 10s linear infinite;
-  animation: scrolling-left1 10s linear infinite;
+.marquee--inner:hover {
+  animation-play-state: paused;
 }
 
-.btmText2 {
-  padding-left: 150px;
-  display: inline-block;
-  /* Apply animation to this element */
-  -webkit-animation: scrolling-left2 10s linear infinite;
-  animation: scrolling-left2 10s linear infinite;
-  animation-delay: 5s;
+/*.half {
+  float: left;
+  width: 10%;
+}*/
+
+span {
+  float: left;
+  width: 50%:
 }
 
-/* scrolling-left is continuous/repeatly text */
-@keyframes scrolling-left1 {
-  0% {
-    transform: translateX(100vw);
-    -webkit-transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes scrolling-left2 {
-  0% {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-  }
-}
-
-@-webkit-keyframes scrolling-left1 {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes scrolling-left2 {
-  0% {
-    -webkit-transform: translateX(0%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-200%);
-  }
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }
 
 .body-colormode {
