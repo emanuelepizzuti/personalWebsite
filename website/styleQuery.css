@@ -17,10 +17,20 @@
   }
 
   .navbar {
-    height: 50px;
+    background-color: beige;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+
+  }
+
+  .nav-branding {
+    font-weight: 300;
+    font-size: 24px;
+    padding: 6px 18px;
+    border: 1px solid var(--black);
   }
 
   .nav-menu {
@@ -42,7 +52,7 @@
     text-align: right;
     font-family: 'Inter';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .hamburger {
@@ -67,7 +77,7 @@
 
   .text2 {
     width: 80vw;
-   font-weight: 200;
+    font-weight: 200;
     padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
