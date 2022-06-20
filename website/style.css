@@ -20,6 +20,7 @@ body, html {
   padding:
     env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
   overflow: hidden;
+  background-color: var(--white);
 }
 
 header {
@@ -67,8 +68,8 @@ a {
 
 .hamburger {
   display: block;
-  height: 32px;
-  width: 32px;
+  height: 34px;
+  width: 34px;
   border: 1px solid var(--black);
   border-radius: 100px;
   background-color: var(--black);
@@ -76,6 +77,8 @@ a {
 }
 
 .hamburger.active {
+  height: 28px;
+  width: 28px;
   background-color: var(--white);
   transition: .3s;
 }
@@ -154,6 +157,8 @@ a {
 
 .linkUni {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-position: auto;
   color: var(--black);
 }
 
@@ -167,6 +172,12 @@ a {
   line-height: var(--textheight);
   letter-spacing: var(--textspacing);
   color: var(--black);
+}
+
+.cv a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-position: auto;
 }
 
 footer {

@@ -8,22 +8,17 @@
   --white: #faffff;
 }
 
-/* *************** */
-/* *** DESKTOP *** */
-/* *************** */
 @media(min-width: 1000px) {
   header {
     border-bottom: none;
   }
 
   .navbar {
-    background-color: beige;
     height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-
   }
 
   .nav-branding {
@@ -55,6 +50,14 @@
     font-size: 24px;
   }
 
+  .nav-item:hover {
+    text-decoration: none;
+    background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
+    cursor: pointer;
+  }
+
   .hamburger {
     display: none;
     cursor: pointer;
@@ -84,6 +87,21 @@
     font-size: var(--textsize-desktop);
   }
 
+  .linkUni {
+    transition: all .2s ease-out;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+  }
+
+  .linkUni:hover {
+    text-decoration: none;
+    background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
+    cursor: pointer;
+  }
+
   .download {
     padding: 0;
     width: 80vw;
@@ -93,26 +111,84 @@
     font-weight: 200;
   }
 
-  #bottomText {
-    font-size: 21px;
+  .cv a {
+    transition: all .2s ease-out;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+  }
+
+  .cv a:hover {
+    text-decoration: none;
+    background: linear-gradient(-30deg, #D5F496, #ADFFE6, #BA96F4, #F496BD);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
+    cursor: pointer;
+  }
+
+  .orb {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: var(--textheight);
+    letter-spacing: var(--textspacing);
+    color: var(--black);
+    width: 300px;
+    /* height: 40px; */
+    /* background: #999; */
+    /* border-radius: 50px; */
+    display: inline-block;
+    margin: 0 99.5px;
+    float: left;
+    transition: all .2s ease-out;
+  }
+
+  .orb:hover {
+    cursor: pointer;
+  }
+
+  .marquee {
+    top: 0;
+    padding-top: 5px;
     height: 40px;
+    width: 2000px;
+    border: 1px solid var(--black);
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    /* margin: 200px auto; */
   }
 
-  .btmText {
-    width: 100%;
+  .marquee--inner {
+    display: block;
+    width: 200%;
+    /* margin: 70px 0; */
+    position: absolute;
+    animation: marquee 20s linear infinite;
   }
 
-  .btmText1 {
-    padding-left: 800px;
-    -webkit-animation: scrolling-left1 8s linear infinite;
-    animation: scrolling-left1 8s linear infinite;
+  .marquee--inner:hover {
+    animation-play-state: paused;
   }
 
-  .btmText2 {
-    padding-left: 800px;
-    -webkit-animation: scrolling-left2 8s linear infinite;
-    animation: scrolling-left2 8s lin8ar infinite;
-    animation-delay: 4s;
+  /*.half {
+    float: left;
+    width: 10%;
+  }*/
+  span {
+    float: left;
+    width: 50%:
+  }
+
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -100%;
+    }
   }
 
   .body-colormode {
